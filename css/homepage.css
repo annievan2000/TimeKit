@@ -63,3 +63,23 @@ img {
   background: #4F485E;
   border-radius: 25px;
 }
+
+.line-separator{
+  height:3px;
+  width:85%;
+  background:#FFFFFF;
+  border-bottom:1px solid #FFFFFF;
+}
+
+.time{
+  font-size:12px;
+  font-weight:bold;
+  margin-left:50%;
+}
+
+.time_friend{
+  font-size:12px;
+  font-weight:bold;
+  color:#FFFFFF;
+  margin-left:50%;
+}
