@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Setting Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/settings.css">
+  </head>
+  <body>
+    <div id="left">
+      <div class="person">
+        <div style="float: left; width: 33%;"><img src="resources/cat.jpg" alt="cat"></div>
+        <div style="float: left; width: 67%;">
+          <h2 style="margin-top: 30px;">Good Morning Jane Doe</h2>
+          <div class="btn-group">
+            <button>Home</button>
+            <button>Friends</button>
+            <button>Settings</button>
+            <button>Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div class="setting">
+	<h2>Profile</h2>
+	<label>First name: </label><input type="text" size="15">, <label>Last name: </label><input type="text" size="15"><br><br>
+	<label>Gender: </label><input type="text" size="15"><br><br>
+	<label>Location: </label><input type="text" size="15">, <label>Time Zone: </label><input type="text" size="15"><br><br>
+	<label>Email: </label><input type="text" size="30"><br><br>
+	<label>Summary: </label><input type="text" size="50"><br>
+	<h2>Privacy</h2>
+	Who can see your list(s) For Yourself?
+	<label>
+ 	  <input type="radio" name="you-friends1">Only you</input>
+  	  <input type="radio" name="you-friends1">Your Friends</input>
+	</label><br>
+
+	Who can see your list(s) For Friends?
+	<label>
+	  <input type="radio" name="you-friends2">Only you</input>
+  	 <input type="radio" name="you-friends2">Your Friends</input>
+	</label><br>
+
+	<h2>Notifications</h2>
+	Notification time?
+	<label>
+  	  <input type="radio" name="notification-time">10 minutes before</input>
+  	  <input type="radio" name="notification-time">1 hour before</input>
+	</label><br>
+	Email?
+	<label>
+  	  <input type="radio" name="email">Yes</input>
+  	  <input type="radio" name="email">No</input>
+	</label><br><br>
+
+	<a href="/">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
