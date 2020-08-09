@@ -1,1 +1,6 @@
-add new friend
+<h2>Add New Friend</h2>
+<form action="/friends" method="POST">
+  <%- include('_form_fields') %>
+  <a href="/friends">Cancel</a>
+  <button type="submit">Add</button>
+</form>

@@ -1,1 +1,10 @@
-Friends index
+<h2>Friends section</h2>
+<br>
+<a href="/friends/add">Add New Friend</a>
+<br>
+<h4>Friend list （currently just email):</h4>
+<% friends.forEach(friend => { %>
+  <li><%= friend.email %></li>
+<% }) %>
+<br>
+<a href="/">Back</a>
