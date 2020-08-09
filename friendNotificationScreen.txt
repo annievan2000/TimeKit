@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Add Friend Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/friend_notification_screen.css">
+  </head>
+  <body>
+    <div id="left">
+      <div class="person">
+        <div style="float: left; width: 33%;"><img class="cat" src="resources/cat.jpg" alt="cat"></div>
+        <div style="float: left; width: 67%;">
+          <h2>Good Morning</h2>
+          <div class="btn-group">
+            <button>Home</button>
+            <button>Friends</button>
+            <button>Settings</button>
+            <button>Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div class="task">
+        <h2 style="margin-left:40px; margin-top: 30px;">Add Friends</h2>
+        <div class="line-separator"></div>
+        <span style="margin-left:40px;margin-top:15px;font-size:14px;display:inline-block;"><b>Enter Email</b></span>
+        <img src="resources/plus_sign.jpg" alt="plus button" style="width:40px;margin-left:85%; margin-top: -10%;">
+      </div>
+      <div class="friend_request">
+	<h2 style="margin-left:40px; margin-top: 30px;">Friend Requests</h2>
+	<span style="margin-left:40px;">Priyal&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><button class="btn">Accept</button><span>|</span><button class="btn">Reject</button><button class="btn">&#9655</button>
+	<span style="margin-left:40px;">Priyal&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><button class="btn">Accept</button><span>|</span><button class="btn">Reject</button><button class="btn">&#9655</button>
+	<span style="margin-left:40px;">Priyal&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><button class="btn">Accept</button><span>|</span><button class="btn">Reject</button><button class="btn">&#9655</button>
+      </div>
+    </div>
+  </body>
+</html>

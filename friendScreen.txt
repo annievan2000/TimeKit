@@ -1,9 +1,10 @@
-﻿<!doctype html>
+
+<!doctype html>
 <html>
   <head>
-    <title>Homepage Screen</title>
+    <title>Friends Screen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/friends.css">
   </head>
   <body>
     <div id="left">
@@ -21,14 +22,11 @@
       </div>
     </div>
     <div id="right">
-      <div class="mylist">
-	<h2 style="margin-left:30px; margin-top:30px;">For Me</h2>
-	<ul style="list-style-type:square; font-size:17px;">
-  	  <li><b>Frontend</b><div class="line-separator"></div><div class="time">Mon 4:00 pm</div></br></li>
-  	  <li><b>Backend</b><div class="line-separator"></div><div class="time">Wed 4:00 pm</div></br></li>
-  	  <li><b>UI</b><div class="line-separator"></li>
-        </ul>
-	<img src="resources/plus_sign_2.jpg" alt="plus button" style="width:40px;right:10px;position:absolute;bottom:10px;">
+      <div class="friend_list">
+	<img class="small" src="resources/cat.jpg" alt="cat">
+	<img class="small" src="resources/cat.jpg" alt="cat">
+	<img class="small" src="resources/cat.jpg" alt="cat">
+	<img class="small" src="resources/cat.jpg" alt="cat">
       </div>
       <div class="friend">
 	<h2 style="margin-left:30px;margin-top:30px;color:white;">For Friends</h2>

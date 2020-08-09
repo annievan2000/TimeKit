@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sign in Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign_in_screen.css">
+  </head>
+  <body>
+    <div id="left">
+      	<img class="homepage_image" src="resources/homepage.jpg" alt="plus button">
+    </div>
+    <div id="right">
+	<p class="name">TimeKit</p>
+	<p style="font-size: 20px;">A website to keep track of personal schedules</p>
+	<button class="button">Sign Up</button>
+	<button class="button">Login</button>
+    </div>
+  </body>
+</html>
