@@ -1,4 +1,22 @@
-<h2>New Task (FOR FRIENDS)</h2>
+<div id="right">
+  <div class="task-addtask" style="background-color: #4F485E">
+    <h2 style="margin-left:40px; margin-top: 30px; color:white;">Add Task</h2>
+    <div class="line-separator-addtask"></div>
+    <form action="/home" method="POST" style="color: white;">
+      <label>Task name</label>
+      <input type="text" name="name"><br><br>
+      <label>Date</label>
+      <input type="text" name="date"><br><br>
+      <label>Time</label>
+      <input type="text" name="time"><br><br>
+
+      <a href="/home">Cancel</a>
+      <button type="submit">Add</button>
+    </form>
+  </div>
+</div>
+
+/*
 <form action="/home" method="POST">
   <label>Task name</label>
   <input type="text" name="name"><br><br>
@@ -6,7 +24,8 @@
   <input type="text" name="date"><br><br>
   <label>Time</label>
   <input type="text" name="time"><br><br>
-      
+
   <a href="/home">Cancel</a>
   <button type="submit">Add</button>
 </form>
+*/
