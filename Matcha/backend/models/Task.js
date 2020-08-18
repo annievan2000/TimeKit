@@ -34,8 +34,6 @@ const TaskSchema = new mongoose.Schema({
             1       // yes reminder for task
         ]
     } 
-}, {
-    timestamps: true
-}); 
+}, ); 
 
 module.exports = mongoose.model('Task', TaskSchema); 

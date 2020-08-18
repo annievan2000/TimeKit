@@ -59,6 +59,7 @@ app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
 app.use('/tasks', require('./routes/tasks'));
 app.use('/user', require('./routes/user'));
+app.use('/friends', require('./routes/friends'));
 
 
 // Run the server (npm run dev or start)

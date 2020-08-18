@@ -5,6 +5,7 @@ const router = express.Router();
 const {ensureAuth} = require('../middleware/auth');
 
 const Task = require('../models/Task');
+const User = require('../models/User');
 
 // @description     Add stories
 // @route           POST /tasks/add
@@ -14,7 +15,14 @@ router.post('/add', async (req, res) => {
         // this line doesnt work w Insomniac/Postman testing
         // because user isnt logged in. Not able to get user's ID
         // req.body.user = req.user.id; 
-        await Task.create(req.body);
+       const task = await Task.create(req.body);
+
+       // Only add public todo items into this todosarray. Makes life easier when you display friends todo items
+       const updateUserTodos = await User.findByIdAndUpdate(
+            {_id: task.user, status: "public"},
+            { $push: { "myTasks" : task._id }}
+        )
+
         res.json('Story added!');
     }catch (err){
         res.status(400).json('Error: ' + err)
