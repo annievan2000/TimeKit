@@ -83,3 +83,25 @@ img {
   color:#FFFFFF;
   margin-left:50%;
 }
+
+@media screen and (max-width: 600px) {
+  .mylist,
+  .friend {
+    float: none;
+    width: 70%;
+    height: 400px;
+    top: 5%;
+  }
+  .friend {
+    margin-left: 15%;
+  }
+  #left {
+    float: none;
+    width: 100%;
+  }
+  #right {
+    float: none;
+    width: 100%;
+    height: 1000px;
+  }
+}
