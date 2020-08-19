@@ -3,6 +3,7 @@
 @import 'shared/friendsScreen_partial.css';
 @import 'shared/homepage_partial.css';
 @import 'shared/settings_partial.css';
+@import 'shared/loginpage_partial.css';
 
 html, body, #left, #right, mylist {
   height: 100%; margin: 0; padding: 0;
