@@ -1,3 +1,19 @@
+html, body, #left, #right, mylist {
+  height: 100%; margin: 0; padding: 0;
+}
+
+#left {
+  float: left;
+  display: inline-block;
+  width: 65%;
+}
+
+#right {
+  float: left;
+  display: inline-block;
+  width: 35%;
+}
+
 .homepage_image {
   width: 80%;
   margin-left: 7%;
@@ -15,7 +31,7 @@
   font-size: 35px;
 }
 
-.button {
+.login {
   border: none;
   color: white;
   background-color: #575E48;
