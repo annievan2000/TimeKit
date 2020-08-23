@@ -68,3 +68,14 @@ html, body, #left, #right, mylist{
   font-size: 14px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  #left {
+    float: none;
+    width: 100%;
+  }
+  #right {
+    float: none;
+    width: 100%;
+  }
+}

@@ -44,3 +44,18 @@ html, body, #left, #right, mylist {
   cursor: pointer;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  #left {
+    float: none;
+    width: 100%;
+  }
+  #right {
+    float: none;
+    width: 100%;
+    margin: 10%;
+  }
+.name {
+    margin-top: -50%;
+  }
+}

@@ -16,7 +16,7 @@ html, body, #left, #right, mylist {
 }
 
 .person {
-  width: 70%;
+  width: 80%;
   height: 30%;
   top: 35%;
   margin: 0 auto;
@@ -86,4 +86,23 @@ html, body, #left, #right, mylist {
   background-color: inherit;
   cursor: pointer;
   display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  #left {
+    float: none;
+    width: 100%;
+  }
+  #right {
+    float: none;
+    width: 100%;
+  }
+.task {
+    width: 60%;
+    margin-left: 20%;
+  }
+.friend_request {
+    width: 60%;
+    margin-left: 20%;
+  }
 }

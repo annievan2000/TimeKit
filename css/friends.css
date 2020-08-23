@@ -16,7 +16,7 @@ html, body, #left, #right, mylist {
 }
 
 .person {
-  width: 70%;
+  width: 80%;
   height: 30%;
   top: 35%;
   margin: 0 auto;
@@ -88,4 +88,23 @@ img {
   font-weight:bold;
   color:#FFFFFF;
   margin-left:50%;
+}
+
+@media screen and (max-width: 600px) {
+  #left {
+    float: none;
+    width: 100%;
+  }
+  #right {
+    float: none;
+    width: 100%;
+  }
+.friend_list {
+  width: 10%;
+  margin-left: 10%;
+}
+.friend {
+    width: 50%;
+    margin-left: 10%;
+  }
 }
