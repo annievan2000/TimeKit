@@ -10,7 +10,7 @@ router.get('/', ensureAuth, async (req, res) => {
     const privatetasks = await Task.find({ user: req.user.id, privacy: 'private'}).lean()
     const publictasks = await Task.find({ user: req.user.id, privacy: 'public'}).lean()
     res.render('home/index', {
-      name: req.user.firstName,
+      firstName: req.user.firstName,
       privatetasks: privatetasks,
       publictasks: publictasks
     })
