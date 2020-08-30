@@ -19,6 +19,10 @@
   margin-top:30px;
 }
 
+form {
+  margin-left: 40px;
+}
+
 ul{
   overflow:auto;
   max-height:270px;
