@@ -23,6 +23,10 @@ form {
   margin-left: 40px;
 }
 
+button[type="submit"]{
+  margin-left: 60%;
+}
+
 ul{
   overflow:auto;
   max-height:270px;
