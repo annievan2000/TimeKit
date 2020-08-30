@@ -16,10 +16,11 @@
   border-bottom:1px solid #C4C4C4;
   margin-left:40px;
   margin-right:60px;
-  margin-top:30px;
+  margin-top:-10px;
 }
 
 form {
+  margin-top: 20px;
   margin-left: 40px;
 }
 
