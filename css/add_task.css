@@ -82,4 +82,7 @@ html, body, #left, #right, mylist{
     height: 60%;
     top: 20%;
   }
+  button[type="submit"]{
+   margin-left: 40%;
+  }
 }
