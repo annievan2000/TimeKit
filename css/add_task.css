@@ -78,4 +78,8 @@ html, body, #left, #right, mylist{
     float: none;
     width: 100%;
   }
+  .task{
+    height: 60%;
+    top: 20%;
+  }
 }
