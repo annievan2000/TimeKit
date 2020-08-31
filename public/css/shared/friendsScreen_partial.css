@@ -1,0 +1,50 @@
+.friend_list {
+  float: left;
+  width: 8%;
+  height: 44%;
+  top: 28%;
+  vertical-align: middle;
+  margin-left: 20%;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.friend {
+  float: left;
+  display: block;
+  width: 30%;
+  height: 70%;
+  top: 15%;
+  vertical-align: middle;
+  margin-left: 10%;
+  position: relative;
+  background: #4F485E;
+  border-radius: 25px;
+}
+
+.small {
+  border-radius: 50%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.line-separator{
+  height:3px;
+  width:85%;
+  background:#FFFFFF;
+  border-bottom:1px solid #FFFFFF;
+}
+
+.time{
+  font-size:12px;
+  font-weight:bold;
+  margin-left:10%;
+}
+
+.time_friend{
+  font-size:12px;
+  font-weight:bold;
+  color:#FFFFFF;
+  margin-left:50%;
+}

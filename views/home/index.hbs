@@ -1,0 +1,41 @@
+<div id="right">
+  <div class="mylist">
+    <h2 style="margin-left:30px; margin-top:30px;">For Me</h2>
+    <ul style="list-style-type:square; font-size:17px;">
+      {{#if privatetasks}}
+
+        {{#each privatetasks}}
+          <b>{{description}}</b>
+          <div class="line-separator"></div>
+          <div class="time">{{reminderDate}} {{reminderTime}}</div><br>
+        {{/each}}
+
+      {{else}}
+        <p>You have not created any tasks for yourself (private)</p>
+      {{/if}}
+    </ul>
+    <a href="home/forme">
+      <img src="/resources/plus_sign_2.jpg" alt="plus button" style="width:40px;right:10px;position:absolute;bottom:10px;">
+    </a>
+  </div>
+
+  <div class="friend">
+    <h2 style="margin-left:30px;margin-top:30px;color:white;">For Friends</h2>
+    <ul style="list-style-type:square; font-size:17px;color:white;">
+      {{#if publictasks}}
+
+        {{#each publictasks}}
+          <b>{{description}}</b>
+          <div class="line-separator"></div>
+          <div class="time">{{reminderDate}} {{reminderTime}}</div><br>
+        {{/each}}
+
+      {{else}}
+        <p>You have not created any tasks for friends (public)</p>
+      {{/if}}
+    </ul>
+    <a href="home/forfriends">
+      <img src="resources/plus_sign_dark.jpg" alt="plus button" style="width:40px;right:10px;position:absolute;bottom:10px;">
+    </a>
+  </div>
+</div>
