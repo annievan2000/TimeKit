@@ -1,10 +1,14 @@
 const mongoose = require('mongoose')
 var Schema = mongoose.Schema;
-//var Friends = require('./Friend');
+var Friends = require('./Friend');
 
 const UserSchema = new mongoose.Schema({
     googleId: {
         type: String
+    },
+    email: {
+        type: String,
+        required: true
     },
     displayName: {
         type: String,
@@ -21,10 +25,10 @@ const UserSchema = new mongoose.Schema({
     image: {
         type: String
     },
-  /*  friends: [{
+    friends: [{
         type: Schema.Types.ObjectId,
-        ref: 'Friends'
-    }],*/
+        ref: 'User'
+    }],
     createdAt: {
         type: Date,
         default: Date.now

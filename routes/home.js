@@ -7,9 +7,10 @@ const Task = require('../models/Task');
 // @route           GET /home
 router.get('/', ensureAuth, async (req, res) => {
   try {
-    const privatetasks = await Task.find({ user: req.user.id, privacy: 'private'}).lean()
-    const publictasks = await Task.find({ user: req.user.id, privacy: 'public'}).lean()
+    const privatetasks = await Task.find({ user: req.user.id, privacy: 'private' }).lean()
+    const publictasks = await Task.find({ user: req.user.id, privacy: 'public' }).lean()
     res.render('home/index', {
+      image: req.user.image,
       firstName: req.user.firstName,
       privatetasks: privatetasks,
       publictasks: publictasks
@@ -24,6 +25,8 @@ router.get('/', ensureAuth, async (req, res) => {
 // @route           GET /home/forme
 router.get('/forme', ensureAuth, (req, res) => {
   res.render('home/forme', {
+    image: req.user.image,
+    firstName: req.user.firstName,
     privacy: 'private'
   })
 })
@@ -33,6 +36,8 @@ router.get('/forme', ensureAuth, (req, res) => {
 // @route           GET /home/forfriends
 router.get('/forfriends', ensureAuth, (req, res) => {
   res.render('home/forfriends', {
+    image: req.user.image,
+    firstName: req.user.firstName,
     privacy: 'public'
   })
 })

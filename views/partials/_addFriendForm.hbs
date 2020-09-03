@@ -1,0 +1,12 @@
+<form action="/friends/add" method="POST" class="task">
+  <h2 style="margin-left:40px; margin-top: 30px;">Add Friends</h2>
+  <label>Email</label>
+  <input type="text" name="recipientEmail"><br><br>
+  <label>Message</label>
+  <input type="text" name="message"><br><br>
+  <input type="hidden" name="requesterEmail" value={{myEmail}}>
+  <input type="hidden" name="status" value="0">
+
+  <a href="/friends">Cancel</a>
+  <button type="submit">Add</button>
+</form>

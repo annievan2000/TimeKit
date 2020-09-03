@@ -9,7 +9,6 @@
   position: relative;
   background: #FFFFFF;
   border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .friend_request {
@@ -22,7 +21,6 @@
   position: relative;
   background: #FFFFFF;
   border-radius: 25px;
-  font-family: 'Alata', sans-serif;
 }
 
 
@@ -31,5 +29,4 @@
   background-color: inherit;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Alata', sans-serif;
 }
