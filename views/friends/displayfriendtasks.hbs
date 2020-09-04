@@ -1,0 +1,29 @@
+<div id="right">
+  <div class="friend_list">
+    {{#if friends}}
+      {{#each friends}}
+        <a href="/friends/view/{{email}}"><img class="small" src="{{image}}"></a>
+      {{/each}}
+    {{else}}
+      <p>No friend</p>
+    {{/if}}
+  </div>
+
+  <div class="friend">
+    <h2 style="margin-left:30px;margin-top:30px;color:white;">For Friends</h2>
+
+      {{#if publictasks}}
+        <ul style="list-style-type:square; font-size:17px;color:white;">
+          {{#each publictasks}}
+            <b>{{description}}</b>
+            <div class="line-separator"></div>
+            <div class="time">{{reminderDate}} {{reminderTime}}</div><br>
+          {{/each}}
+        </ul>
+        <a href="/friends/view/{{friendEmail}}/add"><img src="/resources/plus_sign_dark.jpg" alt="plus button" style="width:40px;right:10px;position:absolute;bottom:10px;"></a>
+      {{else}}
+        <p>You have not created any tasks for friends (public)</p>
+      {{/if}}
+  </div>
+  <a href="/friends">Return</a>
+</div>

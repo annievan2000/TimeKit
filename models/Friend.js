@@ -1,24 +1,31 @@
 const mongoose = require('mongoose')
 var Schema = mongoose.Schema;
 
-var FriendRequestSchema = new Schema({
-    requester: {
-        googleId: {
-            type: String
-        },
-        required: true
+const FriendSchema = new mongoose.Schema({
+    requesterEmail: {
+      type: String,
+      required: true
     },
-    recipient: {
-        googleId: {
-            type: String
-        },
-        required: true
+    recipientEmail: {
+      type: String,
+      required: true
     },
-    status:{
-        type: int, // 0 -> pending, 1-> accpeted, 2 -> rejected
+    message: {
+      type: String,
+      default: 'Add Friend Request',
+      required: false
+    },
+    status: {
+        type: String,
+        enums: [
+            "0",      // sent but not friends
+            "1",      // friends
+            "2"       // decline
+        ],
         required: true
-    }
-}
-)
+      }
+}, {
+    timestamps: true
+})
 
-module.exports = mongoose.model('Friend', UserSchema);
+module.exports = module.exports = mongoose.model('Friends', FriendSchema);

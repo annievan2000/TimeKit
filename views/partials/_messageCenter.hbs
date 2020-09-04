@@ -1,0 +1,31 @@
+<div class="friend_request">
+  <h2 style="margin-left:40px; margin-top: 30px;">Friend Requests</h2>
+  <ul>
+    {{#if allmessages}}
+      {{#each allmessages}}
+        <li>
+          Requester: {{requesterEmail}}<br>
+          Message: {{message}}<br>
+          <form action="/friends/accept/{{requesterEmail}}" method="POST">
+            <input type="hidden" name="status" value="1">
+            <button type="submit">Accept</button>
+          </form>
+
+          <form action="/friends/decline/{{requesterEmail}}" method="POST">
+            <input type="hidden" name="status" value="2">
+            <button type="submit">Decline</button>
+          </form>
+
+          {{!
+          Comments-
+          Yinxuan: Every time we reload the page, make sure to only show friend objects where the status is equal to 0.
+          Haihao/Phobe: After the user clicks accept or delete, you should display a text that's like "Request accepted! / Request Declined" to cover up the row.
+          }}
+
+        </li>
+      {{/each}}
+    {{else}}
+      <p>You have not created any tasks for yourself (private)</p>
+    {{/if}}
+  </ul>
+</div>

@@ -1,22 +1,19 @@
 <div id="right">
-  <div class="task-addtask">
-    <h2 style="margin-left:40px; margin-top: 30px;">
-      Add Task
-    </h2>
+  <div class="task-addtask" style="background-color: #4F485E">
+    <h2 style="margin-left:40px; margin-top: 30px; color:white;">Add Task</h2>
     <div class="line-separator-addtask"></div>
 
-    <form action="/home" method="POST">
+    <form action="/friends/view/{{friendEmail}}" method="POST" style="color: white;">
       <label>Task name</label>
       <input type="text" name="description"><br><br>
       <label>Date</label>
       <input type="date" name="reminderDate"><br><br>
       <label>Time</label>
       <input type="text" name="reminderTime"><br><br>
-      <input type="hidden" name="privacy" value="private">
+      <input type="hidden" name="privacy" value="public">
 
-      <a href="/home" style="color:black">Cancel</a>
+      <a href="/friends/view/{{friendEmail}}" style="color:white">Cancel</a>
       <button type="submit">Add</button>
     </form>
-
   </div>
 </div>

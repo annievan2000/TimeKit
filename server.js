@@ -9,6 +9,10 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session); // Need session middlware and pass it to this varaible
 const connectDB = require('./config/db'); // Code to connect database found here
 
+const Handlebars = require('handlebars');
+// Import function exported by newly installed node modules.
+const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
+
 // Load the configurations (variables), which you can can find at the specified path
 dotenv.config({ path: './config/config.env'});
 
@@ -33,7 +37,11 @@ if(process.env.NODE_ENV === 'development'){
 }
 
 // Handlebars
-app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs'}))
+app.engine('.hbs', exphbs({
+  defaultLayout: 'main',
+  extname: '.hbs',
+  handlebars: allowInsecurePrototypeAccess(Handlebars)
+}))
 app.set('view engine', '.hbs')
 
 // Sessions

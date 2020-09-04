@@ -8,7 +8,6 @@
   position: relative;
   background: #FFFFFF;
   border-radius: 25px;
-  font-family: 'Alata', sans-serif;
 }
 
 .line-separator-addtask {
@@ -18,7 +17,10 @@
   margin-left:40px;
   margin-right:60px;
   margin-top:30px;
-  font-family: 'Alata', sans-serif;
+}
+
+button[type=submit] {
+  margin-left: 60%;
 }
 
 form {
