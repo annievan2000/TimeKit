@@ -8,6 +8,11 @@
   position: relative;
   background: #FFFFFF;
   border-radius: 15px;
+  overflow-y: auto; 
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .friend {
