@@ -17,7 +17,7 @@ const TaskSchema = new mongoose.Schema({
         required: true
     },
     reminderDate: {
-        type: String, // change it later
+        type: Date, // change it later
         required: false
     },
     reminderTime: {

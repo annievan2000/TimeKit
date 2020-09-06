@@ -1,6 +1,7 @@
 // import our server
 const express = require('express');
 const passport = require('passport');
+const { ensureAuth } = require('../middleware/auth')
 
 // connect routher to server
 const router = express.Router();
@@ -18,7 +19,7 @@ router.get('/google/callback', passport.authenticate('google', { failureRedirect
 
 // @description     Logout user
 // @route           /auth/logout
-router.get('/logout', (req, res) => {
+router.get('/logout', ensureAuth, (req, res) => {
     req.logout();
     res.redirect('/');
 })

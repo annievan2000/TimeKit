@@ -40,8 +40,7 @@ router.get('/view/:friendEmail', ensureAuth, async (req, res) => {
       firstName: req.user.firstName,
       friends: allfriends,
       publictasks: friendpublictasks,
-      friendEmail: req.params.friendEmail,
-      friendName: friendUser.firstName
+      friendEmail: req.params.friendEmail
     })
     //res.send('Create')
   } catch (err) {
@@ -52,15 +51,12 @@ router.get('/view/:friendEmail', ensureAuth, async (req, res) => {
 
 // @description     Add a new task for friend (public)
 // @route           GET /friends/view/:friendEmail/add
-router.get('/view/:friendEmail/add', ensureAuth, async (req, res) => {
-  const friendUser = await User.findOne({email: req.params.friendEmail});
-
+router.get('/view/:friendEmail/add', ensureAuth, (req, res) => {
   res.render('friends/friendtask', {
     image: req.user.image,
     firstName: req.user.firstName,
     privacy: 'public',
-    friendEmail: req.params.friendEmail,
-    friendName: friendUser.firstName
+    friendEmail: req.params.friendEmail
   })
 })
 
